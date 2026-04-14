@@ -1,0 +1,31 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+      .glow { animation: pulse 2s infinite; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="100" height="100" fill="#020810"/>
+  
+  <!-- Central hexagon -->
+  <polygon points="50,15 75,27.5 75,72.5 50,85 25,72.5 25,27.5" 
+           fill="none" stroke="#00FF88" stroke-width="2.5"/>
+  
+  <!-- Inner core -->
+  <circle cx="50" cy="50" r="8" fill="#00FFFF" class="glow"/>
+  
+  <!-- Surrounding nodes -->
+  <circle cx="35" cy="35" r="5" fill="#FF2060" class="glow"/>
+  <circle cx="65" cy="35" r="5" fill="#FFD700" class="glow"/>
+  <circle cx="50" cy="65" r="5" fill="#00FF88" class="glow"/>
+  
+  <!-- Connection lines -->
+  <line x1="50" y1="50" x2="35" y2="35" stroke="#00FFFF" stroke-width="1.5" opacity="0.7"/>
+  <line x1="50" y1="50" x2="65" y2="35" stroke="#00FFFF" stroke-width="1.5" opacity="0.7"/>
+  <line x1="50" y1="50" x2="50" y2="65" stroke="#00FFFF" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- Swarm indicator dots -->
+  <circle cx="30" cy="50" r="3" fill="#00FF88" opacity="0.6"/>
+  <circle cx="70" cy="50" r="3" fill="#FF2060" opacity="0.6"/>
+</svg>
